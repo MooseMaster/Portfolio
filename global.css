@@ -1,30 +1,91 @@
-#head {text-align: center;
-			background-image: url(header.jpg);
-			color: aliceblue;
-			-webkit-transform: rotateZ(2deg);}
+/*Change anything*/
 
-#section_1 {text-align: center;
-						margin: 10px 10px 100px 10px;
-						padding: 10px;
-						background-repeat: no-repeat;
-						background-position: center;
-						background-image: url(fries.jpg);}
+body {margin: 0;}
 
-#nav{margin: 10px 190px 100px 0px;
-		padding: 10px;}
+header {
+	background-image: url(header.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: darkorange;
+	margin: 0 0 0px 0;
+	padding: 0px;
+	
+}
+header h1 {
+	margin:  0px;
+	padding: 10px;
+	display: inline;
+	
+}
+nav {
+	margin: 0;
+	padding: 0px;
+	display: inline;
+	text-align: center;
+}
 
-.sec1 {color: black;
-			font-weight: 600;}
+nav ul {
+	margin: 0;
+	padding: 11px;
+	display: inline;
+}
+nav ul li{
+	display: inline-block;
+	color: white;
+	background-color: dimgray;
+	list-style-type: none;
+	margin: 0 50px 3px 0;
+	padding: 5px 5px;
+	border: 0px solid dimgrey;
+}
+nav ul li a{
+	
+	margin: 0;
+	padding: 0;
+	}
 
-.nav {color: white;
-			background-color: gray;}
+.section_1 {
+	clear: both;
+}
+footer{
+	clear: both;
+}
+/* unvisited link */
+a:link {
+    color: orange;
+}
 
-body {font-family: sans-serif;
-			flex: auto}
+/* visited link */
+a:visited {
+    color: darkgoldenrod;
+}
 
-footer {text-align: center;
-				border: 3px solid black;
-				padding: 10px;}
+/* mouse over link */
+a:hover {
+    color: gainsboro;
+}
 
-ol {text-align: left;
-		margin: 10px 190px 10px 10px;}
+/* selected link */
+a:active {
+    color: white;
+}
+header h1{
+    color: white;
+    -webkit-animation-name: change; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 5s; /* Chrome, Safari, Opera */
+    animation-name: change;
+    animation-duration: 5s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes change {
+    from {color: white;}
+    to {color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes change {
+    from {color: white;}
+    to {color: yellow;}
+}
